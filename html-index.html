@@ -1,0 +1,139 @@
+**`<!DOCTYPE html>`**
+
+- O que é? Uma "declaração" para o navegador que informa que a página foi escrita em HTML5. Deve ser sempre a primeira linha do arquivo.
+- Para que usamos no projeto? Para garantir que o navegador renderize a página corretamente, seguindo os padrões mais modernos.
+
+**`<html>`**
+
+- O que é? A tag raiz que envolve todo o conteúdo da sua página.
+- Para que usamos no projeto? Para envolver todo o nosso código e definir o idioma da página como Português do Brasil com o atributo `lang="pt-BR"`. 
+
+**`<head>`**
+
+- O que é? Contém metadados sobre a página (informações para o navegador) que não são visíveis para o usuário.
+- Para que usamos no projeto? Para definir o título da aba, o conjunto de caracteres (`<meta>`), e para conectar nossos arquivos CSS e de ícones (`<link>`).
+
+**`<body>`**
+
+- O que é? Contém todo o conteúdo visível da sua página web.
+- Para que usamos no projeto? Para conter toda a nossa interface: o cabeçalho, os painéis laterais e a área central do mapa.
+
+### Metadados e Links (Tags do `<head>`)
+
+**`<meta>`**
+
+- O que é? Fornece metadados (informações para o navegador) sobre o documento.
+- Para que usamos no projeto? Para definir o conjunto de caracteres para UTF-8 (para acentos) e para configurar a viewport (para responsividade em celulares).
+
+**`<title>`**
+
+- O que é? Define o texto que aparece na aba do navegador.
+- Para que usamos no projeto? O texto dentro dela ("Meu Projeto de Genograma") é o que aparece na aba.
+
+**`<link>`**
+
+- O que é? Conecta um recurso externo à página, principalmente folhas de estilo (CSS).
+- Para que usamos no projeto? Para conectar nosso arquivo `style.css` e a biblioteca de ícones Font Awesome.
+
+### Estrutura Semântica do Conteúdo
+
+**`<header>`**
+
+- O que é? Representa o cabeçalho de uma página ou de uma seção.
+- Para que usamos no projeto? Para conter o menu principal ("Arquivo", "Editar"...) e a área da conta do usuário.
+
+**`<nav>`**
+
+- O que é? Representa uma seção de links de navegação.
+- Para que usamos no projeto? Para agrupar a lista de links do menu principal.
+
+**`<main>`**
+
+- O que é? Representa o conteúdo principal e predominante da página.
+- Para que usamos no projeto? Para envolver a área central da aplicação, que contém o canvas do genograma e sua barra de ferramentas.
+
+**`<aside>`**
+
+- O que é? Representa um conteúdo complementar ou secundário, geralmente exibido como uma barra lateral (sidebar).
+- Para que usamos no projeto? Para os nossos painéis esquerdo (lista de pacientes) e direito (propriedades, ferramentas).
+
+**`<section>`**
+
+- O que é? Define uma seção temática dentro de um documento, agrupando conteúdos relacionados.
+- Para que usamos no projeto? Para dividir o painel direito em blocos lógicos: "Caixa de Ferramentas", "Propriedades" e "Marcos Temporais".
+
+### Agrupamento e Texto
+
+**`<div>`**
+
+- O que é? O "contêiner" mais genérico do HTML, usado para agrupar elementos.
+- Para que usamos no projeto? Para criar os blocos principais de layout, como 'app-container' e 'conteudo-principal', facilitando a estilização com CSS.
+
+**`<span>`**
+
+- O que é? Um contêiner genérico para pequenos trechos de texto que não quebra a linha.
+- Para que usamos no projeto? Para agrupar o "Nome do Usuário" no cabeçalho e o "ID" na lista de pacientes.
+
+**`<ul>`**
+
+- O que é? Unordered List (Lista não ordenada). Cria uma lista de itens com marcadores.
+- Para que usamos no projeto? Para criar o menu de navegação, a lista de pacientes e a lista de marcos temporais.
+
+**`<li>`**
+
+- O que é? List Item (Item da lista). Representa cada item dentro de uma lista `<ul>` ou `<ol>`.
+- Para que usamos no projeto? Para cada paciente na lista, cada item de menu, etc.
+
+**`<h2>` e `<h3>`**
+
+- O que são? São tags de título (Heading). `<h2>` é um subtítulo de `<h1>`, e assim por diante.
+- Para que usamos no projeto? Para dar títulos às nossas seções, como "Pacientes" e "Propriedades".
+
+**`<strong>`**
+
+- O que é? Indica que um texto tem grande importância ou seriedade. Os navegadores geralmente exibem em negrito.
+- Para que usamos no projeto? Para destacar o nome dos pacientes na lista.
+
+### Elementos Interativos e de Mídia
+
+**`<a>`**
+
+- O que é? A tag de "âncora", usada para criar hyperlinks.
+- Para que usamos no projeto? Para os itens clicáveis do menu principal.
+
+**`<img>`**
+
+- O que é? Insere uma imagem na página.
+- Para que usamos no projeto? Para exibir o avatar do usuário. O atributo `src` é o caminho da imagem e o `alt` é o texto descritivo.
+
+**`<button>`**
+
+- O que é? Cria um botão clicável.
+- Para que usamos no projeto? Para todas as ações do usuário: "+ Novo Paciente", os ícones da barra de ferramentas, "Adicionar Marco", etc.
+
+**`<input>`**
+
+- O que é? Cria um campo de entrada de dados para formulários.
+- Para que usamos no projeto? Para a barra de busca (`type="search"`) e para os campos do painel de propriedades (`type="text"`, `type="date"`).
+
+**`<label>`**
+
+- O que é? Define um rótulo ou legenda para um campo de formulário.
+- Para que usamos no projeto? Para descrever cada campo no painel de propriedades ("Nome:", "Nascimento:").
+
+**`<textarea>`**
+
+- O que é? Cria uma caixa de texto de múltiplas linhas.
+- Para que usamos no projeto? Para o campo de "Anotações Clínicas".
+
+### Scripts e Ícones
+
+**`<script>`**
+
+- O que é? Usada para incorporar ou referenciar um código JavaScript.
+- Para que usamos no projeto? Para conectar nosso arquivo `script.js` à página, contendo toda a lógica da aplicação.
+
+**`<i>`**
+
+- O que é? Historicamente era para itálico, mas hoje é comumente usada por bibliotecas como Font Awesome para exibir ícones.
+- Para que usamos no projeto? Exclusivamente para mostrar os ícones nos botões.
