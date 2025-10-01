@@ -25,11 +25,38 @@
             <div class="account_icon"></div>
                 <i class="fa-solid fa-user"></i>
         </div>
-
     </header>
     
+    <!-- --- Principal Content --- -->
     <div class="principal_content">
-        <aside class="left_sidebar">Painel Esquerdo</aside>
+        <!-- --- Left Sidebar --- -->
+        <aside class="left_sidebar">
+            <div class="header_panel">
+                <h2>Pacientes</h2>
+                <button class="btn_icon" title="Adicionar Paciente">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="search_bar">
+                <input type="text" placeholder="Pesquisar Paciente">
+                </button>
+            </div>
+            <ul class="patient_list">
+                <li class="active_patient_item">
+                    <strong>Nome do Paciente 01</strong>
+                    <span>ID: 221204</span>
+                </li>
+                <li class="patient_item">
+                    <strong>Nome do Paciente 02</strong>
+                    <span>ID: 140305</span>
+                </li>
+                <li class="patient_item">
+                    <strong>Nome do Paciente 03</strong>
+                    <span>ID: 070306</span> 
+                </li>
+            </ul>
+        </aside>
+
         <main id="main_content">
             <div id="genogram_map">
                 <canvas id="genogram_canvas"></canvas>
