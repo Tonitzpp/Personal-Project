@@ -58,11 +58,87 @@
         </aside>
 
         <main id="main_content">
+            <!-- --- Main Content --- -->
             <div id="genogram_map">
                 <canvas id="genogram_canvas"></canvas>
             </div>
+
+            <div class="map_toolbar">
+                <button title="Zoom Out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+                <span>100%</span>
+                <button title="Zoom In"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <span class="separator"></span>
+                <button title="Ajustar à Tela"><i class="fa-solid fa-expand"></i></button>
+            </div>
         </main>
-        <aside class="right_sidebar">Painel Direito</aside>
+
+        <!-- --- Right Side Bar --- -->
+        <aside class="right_sidebar">
+            <div class="sidebar_header">
+                <h3>FERRAMENTAS</h3>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            
+            <details class="tool_section">
+                <summary>Pessoas e Símbolos</summary>
+                <div class="tool_section_content">
+                    <div class="tool_search">
+                        <input type="search" placeholder="Pesquisar Símbolo">
+                    </div>
+                    <div class="button-grid">
+                        <button title="Homem"><i class="fa-regular fa-square"></i></button>
+                        <button title="Mulher"><i class="fa-regular fa-circle"></i></button>
+                        <button title="Gêmeos"><i class="fa-solid fa-people-arrows"></i></button>
+                        <button title="Gênero Desconhecido">?</button>
+                        <button title="Falecimento">X</button>
+                        <button title="Adoção">A</button>
+                        <button title="Gravidez"><i class="fa-solid fa-child"></i></button>
+                        <button title="Aborto"><i class="fa-solid fa-xmark"></i></button>
+                        <button title="Pet"><i class="fa-solid fa-paw"></i></button>
+                        <button title="Homem"><i class="fa-regular fa-square"></i></button>
+                        <button title="Mulher"><i class="fa-regular fa-circle"></i></button>
+                        <button title="Gêmeos"><i class="fa-solid fa-people-arrows"></i></button>
+                    </div>
+                </div>
+            </details>
+            
+
+            <details class="tool_section">
+                <summary>Propriedades do Item</summary>
+                <div class="tool_section_content">
+                    <div class="form-properties">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome">
+                        <label for="nascimento">Nascimento:</label>
+                        <input type="date" id="nascimento">
+                        <label for="falecimento">Falecimento:</label>
+                        <input type="date" id="falecimento">
+                        <label for="notas">Anotações:</label>
+                        <textarea id="notas" rows="4"></textarea>
+                    </div>
+                </div>
+            </details>
+
+            <details class="tool_section"> 
+                <summary>Relações</summary>
+                <div class="tool_section_content">
+                    <div class="tool_search">
+                        <input type="search" placeholder="Pesquisar Relação">
+                    </div>
+                    <div class="button-grid">
+                        <button title="Casamento"><i class="fa-solid fa-ring"></i></button>
+                        <button title="União Estável"><i class="fa-solid fa-handshake"></i></button>
+                        <button title="Separação"><i class="fa-solid fa-divide"></i></button>
+                        <button title="Divórcio"><i class="fa-solid fa-scissors"></i></button>
+                        <button title="Relacionamento"><i class="fa-solid fa-heart"></i></button>
+                        <button title="Relação Abusiva"><i class="fa-solid fa-triangle-exclamation"></i></button>
+                        <button title="Relação Conflituosa"><i class="fa-solid fa-bolt"></i></button>
+                        <button title="Relação Distante"><i class="fa-solid fa-person-walking-arrow-loop-left"></i></button>
+                        <button title="Relação Próxima"><i class="fa-solid fa-hands-holding-child"></i></button>
+                    </div>
+                </div>
+            </details>
+        </aside>
     </div>
     <script src="script.js"></script>
 </body>
